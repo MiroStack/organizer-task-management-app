@@ -1,3 +1,4 @@
+<p>Link:</p>![Title](https://mirostack.github.io/organizer-task-management-app/)
 <h1>Introduction</h1>
 <p>The project is a task management application designed to help users efficiently organize, track, and prioritize their tasks. It enables users to break down larger projects into smaller, manageable tasks, set deadlines, and monitor their progress. The application ensures that users stay on top of their responsibilities while optimizing productivity and time management.</p>
 <br>
