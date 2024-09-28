@@ -1,0 +1,104 @@
+.search-add-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    font-size: 8px;
+    padding: 0 10%;
+    margin: 40px, auto 0;
+  }
+  .search-container > input{
+    flex-grow: 1;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    padding: 0.5em;
+    font-size: var(--font-size-m);
+    height: 100%;
+    background-color: var(--color-light);
+  }
+  
+  .search-add-container > .search-container{
+    height: 6em;
+    flex-grow: 1;
+    background-color: var(--color-light);
+    font-size: 8px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding: 0 1em 0 1em;
+    position: relative;
+  
+  }
+  .search-container > .sort-icons-container{
+    display: flex;
+    align-items: center;
+    font-size: var(--font-size-l);
+    cursor: pointer;
+  
+  
+  }
+  .sort-option{
+   height: auto;
+   width: 12em;
+   background-color: var(--color-light);
+   position: absolute;
+   bottom: -240%;
+   right: 0;
+   font-size: var(--font-size-m);
+   text-align: center;
+   z-index: 1;
+   list-style: none;
+  }
+  .active-sort-option{
+    background-color: var(--color-dark);
+    color: var(--color-light);
+ 
+  }
+  
+  .sort-option > li:hover{
+    cursor: pointer;
+    background-color: var(--color-lightgray);
+    color: var(--color-dark);
+  }
+  .search-add-container> .add-button{
+    cursor: pointer;
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    height: 100%;
+    border-radius: 8px;
+    width: 10em;
+  }
+  .search-add-container> .add-button-mobile{
+    display: none;
+    cursor: pointer;
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    height: 3em;
+    width: 3em;
+    border-radius: 8px;
+  }
+  .search-add-container> .add-button-mobile > .icons{
+   font-size: var(--font-size-m);
+  }
+  
+  @media (min-width:360px) and (max-width:850px) {
+   
+    .root > h1{
+      font-size: 1.5em;
+    }
+    .add-button{
+      display: none;
+    }
+    .search-add-container> .add-button-mobile{
+      display: block;
+    }
+    .search-container > input{
+      font-size: 1.5em;
+    }
+    .sort-option{
+      font-size: 2.5em;
+      bottom: -320%;
+     }
+  
+  }

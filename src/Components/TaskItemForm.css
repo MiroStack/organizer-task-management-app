@@ -1,0 +1,122 @@
+.task-form-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 60em;
+    width: 60em;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 2px 4px 8px var(--color-lightgray);
+    padding: 1em;
+    font-size: 8px;
+    z-index: 1;
+}
+.task-form-container > h2{
+  text-align: center;
+  font-size: var(--font-size-l);
+}
+.task-form-container > div > h3{
+    text-align: center;
+    font-size: var(--font-size-m);
+  }
+
+.task-input-container, .priority-container, .label-container, .date-container, .time-container{
+    height: 10em;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.input-wrapper{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 1em;
+    width: 70%;
+    border-radius: 8px;
+    background-color: var(--color-light);
+    padding: 8px;
+    text-align: center;
+    justify-content: center;
+    font-size: var(--font-size-s);
+
+}
+.input-wrapper > input[type=text]{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background-color: var(--color-light);
+}
+.input-wrapper > input[type=number]{
+    border: none;
+    outline: none;
+    background-color: var(--color-light);
+    font-size: var(--font-size-s);
+   text-align: center;
+}
+.input-wrapper > input[type=number]::-webkit-inner-spin-button,
+.input-wrapper > input[type=number]::-webkit-outer-spin-button
+{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input-wrapper > label{
+    flex-grow: 1;
+    margin-left:2px;
+}
+ .input-wrapper > input[type="date"]{
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: var(--color-light);
+    text-align: center;
+    font-size: var(--font-size-s);
+}
+.input-wrapper > select{
+    background-color: aqua;
+    border-radius: 8px;
+    outline: none;
+}
+
+.btn-container > button{
+   width: 10em;
+   height: 3em;
+   border-radius: 8px;
+   border: none;
+   transition: all ease-in 200ms;
+   margin: 2em;
+   color: var(--color-light);
+
+}
+.btn-container > button:hover{
+    transform: scale(1.1);
+}
+.btn-container > button:active{
+    transform: scale(.8);
+}
+.btn-cancel{
+    background-color: red;
+}
+.btn-edit{
+    background-color: green;
+}
+@media (max-width:550px){
+    .task-form-container{
+        height: 50em;
+        width: 40em;
+     }
+     .btn-container > button{
+        width: 8em;
+        height: 3em;
+        margin: 1em;
+     }
+     .input-wrapper{
+        font-size: 1.2em;
+     }
+   
+}
